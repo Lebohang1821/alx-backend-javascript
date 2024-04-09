@@ -9,5 +9,5 @@ export default async function handleProfileSignup(firstName, lastName, fileName)
         status: o.status,
         value: o.status === 'fulfilled' ? o.value : String(o.reason),
       }))
-    ));
+    )); // Map results to extract status and value, handling both fulfillment and rejection
 }
