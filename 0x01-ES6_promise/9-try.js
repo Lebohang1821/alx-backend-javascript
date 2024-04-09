@@ -9,5 +9,5 @@ export default function guardrail(mathFunction) {
     queue.push('Guardrail was processed');
   }
 
-  return queue;
+  return queue; // Return array containing results and messages
 }
