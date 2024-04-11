@@ -20,10 +20,7 @@ export default class Currency {
     this._name = value;
   }
 
-  /**
-   * Creates the full string representation of this Currency.
-   * @returns {String}
-   */
+  // It makes full string representation of Currency
   displayFullCurrency() {
     return `${this.name} (${this.code})`;
   }
