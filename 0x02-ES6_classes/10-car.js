@@ -1,8 +1,8 @@
 export default class Car {
   constructor(brand, motor, color) {
-    this.brand = brand;
-    this.motor = motor;
-    this.color = color;
+    this.brand = brand; // Car brand
+    this.motor = motor; // Motor type
+    this.color = color; // Car color
   }
 
   get brand() {
