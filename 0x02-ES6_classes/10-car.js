@@ -30,12 +30,12 @@ export default class Car {
   }
 
   static get [Symbol.species]() {
-    return this;  // Returns constructor function
+    return this;
   }
 
   cloneCar() {
     const Species = this.constructor[Symbol.species];
 
-    return new Species(); // Creating new instance
+    return new Species();
   }
 }
