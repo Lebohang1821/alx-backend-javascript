@@ -1,60 +1,51 @@
 export class HolbertonClass {
-  // Constructor method for creating instances of HolbertonClass
   constructor(year, location) {
-    // Initializing year and location properties
-    this._year = year; // Year of class
-    this._location = location; // Location of class
+    this._year = year; // Year
+    this._location = location; // Location
   }
 
-  // Getter method for retrieving year of class
   get year() {
-    return this._year;
+    return this._year; // Get year
   }
 
-  // Getter method for retrieving location of the class
   get location() {
-    return this._location;
+    return this._location; // Get location
   }
 }
 
-// Defining class named StudentHolberton to represent student at Holberton
+// Represents a student at Holberton
 export class StudentHolberton {
-  // Constructor method for creating instances of StudentHolberton
   constructor(firstName, lastName, holbertonClass) {
-    // Initializing the firstName, lastName, and holbertonClass properties
-    this._firstName = firstName; // First name of the student
-    this._lastName = lastName; // Last name of the student
-    this._holbertonClass = holbertonClass; // HolbertonClass instance representing the student's class
+    this._firstName = firstName; // First name
+    this._lastName = lastName; // Last name
+    this._holbertonClass = holbertonClass; // HolbertonClass instance
   }
 
-  // Getter method for retrieving the full name of the student
   get fullName() {
-    return `${this._firstName} ${this._lastName}`;
+    return `${this._firstName} ${this._lastName}`; // Full name
   }
 
-  // Getter method for retrieving the HolbertonClass instance associated with the student
   get holbertonClass() {
-    return this._holbertonClass;
+    return this._holbertonClass; // HolbertonClass instance
   }
 
-  // Getter method for retrieving the full description of the student, including name, class year, and location
   get fullStudentDescription() {
     return `${this._firstName} ${this._lastName} - ${this._holbertonClass.year} - ${this._holbertonClass.location}`;
   }
 }
 
-// Creating instances of HolbertonClass and StudentHolberton
-const class2019 = new HolbertonClass(2019, 'San Francisco');
-const class2020 = new HolbertonClass(2020, 'San Francisco');
+// Instances of HolbertonClass and StudentHolberton
+const class2019 = new HolbertonClass(2019, 'San Francisco'); // HolbertonClass instance for 2019
+const class2020 = new HolbertonClass(2020, 'San Francisco'); // HolbertonClass instance for 2020
 
-const student1 = new StudentHolberton('Guillaume', 'Salva', class2020);
-const student2 = new StudentHolberton('John', 'Doe', class2020);
-const student3 = new StudentHolberton('Albert', 'Clinton', class2019);
-const student4 = new StudentHolberton('Donald', 'Bush', class2019);
-const student5 = new StudentHolberton('Jason', 'Sandler', class2019);
+const student1 = new StudentHolberton('Guillaume', 'Salva', class2020); // Student 1
+const student2 = new StudentHolberton('John', 'Doe', class2020); // Student 2
+const student3 = new StudentHolberton('Albert', 'Clinton', class2019); // Student 3
+const student4 = new StudentHolberton('Donald', 'Bush', class2019); // Student 4
+const student5 = new StudentHolberton('Jason', 'Sandler', class2019); // Student 5
 
-// Creating a list of students
+// List of students
 const listOfStudents = [student1, student2, student3, student4, student5];
 
-// Exporting the list of students as the default export of the module
+// Exporting the list of students as the default export
 export default listOfStudents;
