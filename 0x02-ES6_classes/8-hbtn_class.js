@@ -22,11 +22,10 @@ export default class HolbertonClass {
 
   [Symbol.toPrimitive](hint) {
     if (hint === 'number') {
-      return this.size;
+      return this.size; // If conversion hint is 'string', return location
     }
     if (hint === 'string') {
-      return this.location;
+      return this.location; // If conversion hint is 'string', return location
     }
-    return this;
-  }
+    return this; // If conversion hint is neither 'number' nor 'string'
 }
