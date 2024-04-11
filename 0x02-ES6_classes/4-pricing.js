@@ -6,6 +6,7 @@ export default class Pricing {
     this.currency = currency;
   }
 
+  // Getter method for retrieving amount of price
   get amount() {
     return this._amount;
   }
@@ -17,16 +18,11 @@ export default class Pricing {
     this._amount = value;
   }
 
-  /**
-   * @returns {Currency}
-   */
+  // It returns the Currency
   get currency() {
     return this._currency;
   }
 
-  /**
-   * @param {Currency} value
-   */
   set currency(value) {
     if (!(value instanceof Currency)) {
       throw new TypeError('currency must be a Currency');
@@ -35,6 +31,7 @@ export default class Pricing {
   }
 
   displayFullPrice() {
+    // Returns string representing full price including currency name and code
     return `${this.amount} ${this.currency.name} (${this.currency.code})`;
   }
 
@@ -45,6 +42,6 @@ export default class Pricing {
     if (typeof conversionRate !== 'number') {
       throw new TypeError('conversionRate must be a number');
     }
-    return amount * conversionRate;
+    return amount * conversionRate; // Calculating converted price
   }
 }
