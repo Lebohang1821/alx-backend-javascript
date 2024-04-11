@@ -10,11 +10,11 @@ export default class Building {
     }
   }
 
-  get sqft() {
+  get sqft() { // Gets method for retrieving square footage of building
     return this._sqft;
   }
 
-  set sqft(value) {
+  set sqft(value) { // Sets method for setting square footage of building
     this._sqft = value;
   }
 }
