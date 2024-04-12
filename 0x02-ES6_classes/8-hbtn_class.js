@@ -21,7 +21,7 @@ export default class HolbertonClass {
   }
 
   [Symbol.toPrimitive](hint) { // Convert - primitive
-    if (hint === 'number') {
+    if (hint === 'number') { // Return size
       return this.size;
     }
     if (hint === 'string') {
