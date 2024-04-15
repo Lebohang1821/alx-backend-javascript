@@ -13,5 +13,5 @@ export default function updateStudentGradeByCity(students, city, newGrades) {
           .pop() || defaultGrade).grade,
       }));
   }
-  return [];
+  return []; // It returns empty array if input is not array
 }
