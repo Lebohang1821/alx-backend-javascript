@@ -5,6 +5,6 @@ export default function groceriesList() {
     ['Pasta', 1],
     ['Rice', 1],
     ['Banana', 5],
-  ];
+  ]; // Creates Map from groceries array and returns
   return new Map(groceries);
 }
