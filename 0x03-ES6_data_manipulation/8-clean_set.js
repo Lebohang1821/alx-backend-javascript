@@ -11,6 +11,6 @@ export default function cleanSet(set, startString) {
         strParts.push(valSubStr);
       }
     }
-  }
+  } // Join cleaned string parts with hyphens and return
   return strParts.join('-');
 }
