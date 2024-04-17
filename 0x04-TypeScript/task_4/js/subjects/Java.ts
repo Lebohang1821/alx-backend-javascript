@@ -1,8 +1,8 @@
-// Define a namespace called Subjects
+// It defines namespace called Subjects
 namespace Subjects {
-  // Define an interface for teachers specific to Java
+  // Define interface for teachers specific to Java
   export interface Teacher {
-    experienceTeachingJava?: number; // Optional property representing experience teaching Java
+    experienceTeachingJava?: number; // Optional property
   }
 
   // Define a class for the Java subject, extending a generic Subject class
