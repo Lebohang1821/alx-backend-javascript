@@ -55,7 +55,7 @@ const styleSheet = `
 `;
 
 /**
- * It displays information about students in table
+ * It displays info about students in table
  * @param students list of students to display.
  */
 export const displayStudents = (students: Array<Student>): void => {
