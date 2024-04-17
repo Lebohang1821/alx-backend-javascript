@@ -1,4 +1,4 @@
-// Define a namespace called Subjects
+// It defines namespace called Subjects
 namespace Subjects {
   // Define an interface for teachers specific to React
   export interface Teacher {

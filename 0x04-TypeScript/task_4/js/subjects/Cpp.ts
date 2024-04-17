@@ -1,11 +1,11 @@
-// Define a namespace called Subjects
+// It defines namespace called Subjects
 namespace Subjects {
-  // Define an interface for teachers
+  // Define interface for teachers
   export interface Teacher {
-    experienceTeachingC?: number; // Optional property representing experience teaching C
+    experienceTeachingC?: number; // Optional property
   }
 
-  // Define a class for the C++ subject, extending a generic Subject class
+  // Define a class for the C++ subject
   export class Cpp extends Subjects.Subject {
     // Method to get requirements for C++
     getRequirements(): string {
