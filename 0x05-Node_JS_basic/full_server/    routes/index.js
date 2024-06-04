@@ -2,7 +2,7 @@ import AppController from '../controllers/AppController';
 import StudentsController from '../controllers/StudentsController';
 
 /**
- * Binds the routes to the appropriate handler in the
+ * It binds routes to appropriate handler in
  * given Express application.
  * @param {Express} app The Express application.
  */
