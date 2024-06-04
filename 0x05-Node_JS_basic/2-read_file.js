@@ -1,8 +1,8 @@
 const fs = require('fs');
 
 /**
- * Counts the students in a CSV data file.
- * @param {String} dataPath The path to the CSV data file.
+ * Counts the students in CSV data file and displays count and group details.
+ * @param {string} dataPath - The path to CSV data file.
  */
 const countStudents = (dataPath) => {
   if (!fs.existsSync(dataPath)) {
