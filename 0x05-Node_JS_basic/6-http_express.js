@@ -1,5 +1,6 @@
 const express = require('express');
 
+// Creates Express application
 const app = express();
 const PORT = 1245;
 
