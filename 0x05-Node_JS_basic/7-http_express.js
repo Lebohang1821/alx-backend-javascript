@@ -1,12 +1,13 @@
 const express = require('express');
 const fs = require('fs');
 
+// Define the port
 const app = express();
 const PORT = 1245;
 const DB_FILE = process.argv.length > 2 ? process.argv[2] : '';
 
 /**
- * Counts the students in a CSV data file.
+ * Parses CSV file containing student data and counts number of students.
  * @param {String} dataPath The path to the CSV data file.
  */
 const countStudents = (dataPath) => new Promise((resolve, reject) => {
