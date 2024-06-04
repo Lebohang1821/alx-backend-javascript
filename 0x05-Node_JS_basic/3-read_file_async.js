@@ -1,8 +1,10 @@
 const fs = require('fs');
 
 /**
- * Counts the students in a CSV data file.
- * @param {String} dataPath The path to the CSV data file.
+ * Counts the students in CSV data file and outputs count and group details.
+ * @param {string} dataPath - Path to CSV data file.
+ * @returns {Promise<boolean>} - Promise that resolves to true if operation is successful.
+ * @throws {Error} - If there is an error reading file or processing data.
  */
 const countStudents = (dataPath) => new Promise((resolve, reject) => {
   fs.readFile(dataPath, 'utf-8', (err, data) => {
