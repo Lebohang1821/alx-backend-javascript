@@ -1,6 +1,7 @@
 import express from 'express';
 import mapRoutes from './routes';
 
+// Defines port
 const app = express();
 const PORT = 1245;
 
