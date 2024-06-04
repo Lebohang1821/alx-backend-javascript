@@ -1,14 +1,15 @@
 const http = require('http');
 const fs = require('fs');
 
+// Define the port and host
 const PORT = 1245;
 const HOST = 'localhost';
 const app = http.createServer();
 const DB_FILE = process.argv.length > 2 ? process.argv[2] : '';
 
 /**
- * Counts the students in a CSV data file.
- * @param {String} dataPath The path to the CSV data file.
+ * Parses CSV file containing student data and counts number of students.
+ * @param {String} dataPath The path to CSV data file.
  */
 const countStudents = (dataPath) => new Promise((resolve, reject) => {
   if (!dataPath) {
