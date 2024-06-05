@@ -1,6 +1,7 @@
 const assert = require('assert');
 const calculateNumber = require('./1-calcul');
 
+// Test suite for calculateNumber function
 describe('calculateNumber', () => {
   describe('type == "SUM"', () => {
     it('equal positive numbers', () => {
