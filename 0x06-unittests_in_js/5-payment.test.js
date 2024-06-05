@@ -2,6 +2,7 @@ const sinon = require('sinon');
 const { expect } = require('chai');
 const sendPaymentRequestToApi = require('./5-payment');
 
+// Test suite for sendPaymentRequestToApi function
 describe('sendPaymentRequestToApi', () => {
   let bigBrother;
 
