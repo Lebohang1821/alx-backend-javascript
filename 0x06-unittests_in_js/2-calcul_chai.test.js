@@ -1,6 +1,7 @@
 const { expect } = require('chai');
 const calculateNumber = require('./2-calcul_chai');
 
+// Test suite for calculateNumber function
 describe('calculateNumber', () => {
   describe('type == "SUM"', () => {
     it('equal positive numbers', () => {
