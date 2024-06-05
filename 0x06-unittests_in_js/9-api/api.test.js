@@ -1,6 +1,7 @@
 const request = require('request');
 const { expect } = require('chai');
 
+// Test suite for API integration testing
 describe('API integration test', () => {
   const API_URL = 'http://localhost:7865';
 
