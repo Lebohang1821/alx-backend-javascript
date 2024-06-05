@@ -3,6 +3,7 @@ const Utils = require('./utils');
 const { expect } = require('chai');
 const sendPaymentRequestToApi = require('./3-payment');
 
+// Test suite for sendPaymentRequestToApi function
 describe('sendPaymentRequestToApi', () => {
   it('sendPaymentRequestToApi uses the calculateNumber method of Utils', () => {
     const bigBrother = sinon.spy(Utils);
