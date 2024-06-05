@@ -1,6 +1,7 @@
 const { expect } = require('chai');
 const getPaymentTokenFromAPI = require('./6-payment_token');
 
+// Test suite for getPaymentTokenFromAPI function
 describe('getPaymentTokenFromAPI', () => {
   it('getPaymentTokenFromAPI(success), where success == true', (done) => {
     getPaymentTokenFromAPI(true)
